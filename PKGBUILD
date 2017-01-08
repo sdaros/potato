@@ -1,16 +1,16 @@
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: Stefano Da Ros <sd@cip.li>
 pkgname=potato
-pkgver=4
+pkgver=5
 pkgrel=1
-pkgdesc="A pomodoro timer for the shell"
+pkgdesc="A pomodoro timer for the shell (using libnotify)"
 arch=('any')
-url="https://github.com/Bladtman242/potato"
+url="https://github.com/sdaros/potato"
 license=('MIT')
 depends=('alsa-utils')
 source=('potato.sh'
         'LICENSE')
-md5sums=('a39b72e01fccb4a3225a14f3216d9619'
-         '1ddcbd2862764b43d75fb1e484bf8912')
+sha256sums=('6710516854b4195291b520b4a9b67f9f53a7aa5db72cbac52cac723b869db181'
+'SKIP')
 
 package() {
 	install -D $srcdir/potato.sh $pkgdir/usr/bin/$pkgname
